@@ -16,7 +16,7 @@ npx create-remix@latest --template remix-run/indie-stack
 - [GitHub Actions](https://github.com/features/actions) for deploy on merge to production and staging environments
 - Email/Password Authentication with [cookie-based sessions](https://remix.run/docs/en/v1/api/remix#createcookiesessionstorage)
 - Database ORM with [Prisma](https://prisma.io)
-- Styling with [Tailwind](https://tailwindcss.com/)
+- Styling with [Prime React](https://primefaces.org/primereact)
 - End-to-end testing with [Cypress](https://cypress.io)
 - Local third party request mocking with [MSW](https://mswjs.io)
 - Unit testing with [Vitest](https://vitest.dev) and [Testing Library](https://testing-library.com)
@@ -35,7 +35,7 @@ Click this button to create a [Gitpod](https://gitpod.io) workspace with the pro
 ## Development
 
 - This step only applies if you've opted out of having the CLI install dependencies for you:
-  
+
   ```sh
   npx remix init
   ```
@@ -89,6 +89,7 @@ Prior to your first deployment, you'll need to do a few things:
   fly apps create indie-stack-template
   fly apps create indie-stack-template-staging
   ```
+
   > **Note:** Make sure this name matches the `app` set in your `fly.toml` file. Otherwise, you will not be able to deploy.
 
   - Initialize Git.

@@ -9,11 +9,17 @@ import {
   ScrollRestoration,
 } from "@remix-run/react";
 
-import tailwindStylesheetUrl from "./styles/tailwind.css";
 import { getUser } from "./session.server";
+import theme from "primereact/resources/themes/lara-light-indigo/theme.css";
+import primeReact from "primereact/resources/primereact.min.css";
+import primeIcons from "primeicons/primeicons.css";
 
 export const links: LinksFunction = () => {
-  return [{ rel: "stylesheet", href: tailwindStylesheetUrl }];
+  return [
+    { rel: "stylesheet", href: theme },
+    { rel: "stylesheet", href: primeReact },
+    { rel: "stylesheet", href: primeIcons },
+  ];
 };
 
 export const meta: MetaFunction = () => ({
